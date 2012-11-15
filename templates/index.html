@@ -3,22 +3,25 @@
 {% block body %}
 
 <table><tr><td>
+	<BODY BGCOLOR="ADD8E6">
     <h2><a href="/user/{{ current_user.email }}">{{ current_user.pretty_name }}</a></h2>
     </td><td><div style="width: 30px"></div></td><td style="font-size: 83%">
-    currently
+    Currently
     {% if current_user.enabled %}
-      enabled (<a class="light" href="?setenabled=0">disable</a>)
+      Enabled (<a class="light" href="?setenabled=0">Disable</a>)
     {% else %}
-      disabled (<a class="light" href="?setenabled=1">enable</a>)
+      Disabled (<a class="light" href="?setenabled=1">Enable</a>)
     {% endif %}
     <form action="/" method="get">
     
-    my tags <input name="tags" type="text" value="{{ current_user.tags|join:"," }}"/></form>
+    My Tags <input name="tags" type="text" value="{{ current_user.tags|join:"," }}"/></form>
     
     </td></tr></table>
     <br/>
+    <p> Hello MxM Rockers!!! This is CritSend Snippets Bot!! 
+    <br> Don't forget to send me your weekly snippet to snippets@critsendsnippets.appspotmail.com by Monday afternoon!
+    <br> I'm a very gossip girl and want to know everything you did this week!</p>
 
-    send your snippets to snippets@fssnippets.appspotmail.com by monday afternoon!
     <br/><br/>        
     <table cellspacing=20>
       <tr>

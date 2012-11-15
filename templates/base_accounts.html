@@ -1,0 +1,78 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>{% block title %}MyAccount C2{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../../static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../../static/css/c2.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="../../static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#"><span class="b_txt">MyAccount</span> <span class="or_txt">C2</span></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/dashboard">Dashboard</a></li>
+              <li><a href="/dashboard">Campaigns</a></li>
+              <li><a href="/alerts">Alerts</a></li>
+              <li><a href="/order">Order</a></li>
+              <li><a href="/settings">Account Settings</a></li>
+            </ul>
+            <div class="pull-right">
+              <ul class="nav">
+                <li><a class="large_lines"><span class="b_txt">|</span> <span class="or_txt">|</span></a></li>
+              <li><a href="/settings">Logout</a></li>
+            </ul>
+            </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      {% block content %}
+      <h1>404: You have reached a blank page</h1>
+      {% endblock %}
+
+    </div> <!-- /container -->
+
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a>© Critsend 2012</a></li>
+            </ul>
+            <div class="pull-right">
+              <ul class="nav">
+                <li><a class="large_lines" style="top:-3px;"><span class="b_txt">|</span> <span class="or_txt">|</span></a></li>
+              <li><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> <!-- blank for accurate spacing -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="../../static/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

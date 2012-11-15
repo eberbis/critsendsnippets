@@ -6,9 +6,9 @@
     <h2>{{ user.email }}</h2>
 
     {% if following %}
-      ✓ <a class="light" href="/unfollow?user={{ user.email }}&continue=/user/{{ user.email }}">unfollow</a>
+      ✓ <a class="light" href="/unfollow?user={{ user.email }}&continue=/user/{{ user.email }}">Unfollow this user</a>
     {% else %}
-      <a class="light" href="/follow?user={{ user.email }}&continue=/user/{{ user.email }}">follow</a>
+      <a class="light" href="/follow?user={{ user.email }}&continue=/user/{{ user.email }}">Follow this user</a>
     {% endif %}
 
     <br/></br>
@@ -16,17 +16,17 @@
     {% for tag in tags %}
         {{ tag.0 }}
 		    {% if tag.1 %}
-		      ✓ <a class="light" href="/unfollow?tag={{ tag.0 }}&continue=/user/{{ user.email }}">unfollow</a>
+		      ✓ <a class="light" href="/unfollow?tag={{ tag.0 }}&continue=/user/{{ user.email }}">Unfollow</a>
 		    {% else %}
-		      <a class="light" href="/follow?tag={{ tag.0 }}&continue=/user/{{ user.email }}">follow</a>
+		      <a class="light" href="/follow?tag={{ tag.0 }}&continue=/user/{{ user.email }}">Follow</a>
 		    {% endif %}
         <br/>
     {% endfor %}
 
   </div>
-  <div style="float: left; margin-left: 30px; max-width: 600px">
+  <div style="float: left; margin-left: 30px; max-width: 600px padding:5px;border:1px solid black">
     {% for snippet in snippets %}
-      <b>{{ snippet.date }}</b><br/>
+      <b style="font=Cursiva; border:1px solid black;">{{ snippet.date }}</b><br/>
       <pre>{{ snippet.text|urlize }}</pre>
       <br/></br>
     {% endfor %}

@@ -6,13 +6,13 @@
     <h2>{{ tag }}</h2>
 
     {% if following %}
-      ✓ <a class="light" href="/unfollow?tag={{ tag }}&continue=/tag/{{ tag }}">unfollow</a>
+      ✓ <a class="light" href="/unfollow?tag={{ tag }}&continue=/tag/{{ tag }}">Unfollow this tag</a>
     {% else %}
-      <a class="light" href="/follow?tag={{ tag }}&continue=/tag/{{ tag }}">follow</a>
+      <a class="light" href="/follow?tag={{ tag }}&continue=/tag/{{ tag }}">Follow this tag</a>
     {% endif %}
 
   </div>
-  <div style="float: left; margin-left: 30px; max-width: 600px">
+  <div style="float: left; margin-left: 30px; max-width: 600px; border:3px solid black">
     {% for snippet in snippets %}
       <b>{{ snippet.user.pretty_name }}</b><br/>
       <pre>{{ snippet.text|urlize }}</pre>
