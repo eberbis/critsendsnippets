@@ -1,0 +1,43 @@
+.hero-unit{
+	background-color:#000000;
+	padding:30px;
+	padding-top:10px;
+}
+.hero-unit h1{
+	font-size:350px;
+	display:inline-block;
+	color:#DDD;
+	line-height:90%
+}
+.hero-unit p{
+	display:inline-block;
+	width:360px;
+	color:#777;
+	margin-left:30px;
+}
+.zr_margin{
+	margin-left:0px;
+	margin-right:0px;
+}
+.input-append{
+	display:inline-block;
+}
+.large_lines{
+	font-size: 42px;
+	position: relative;
+	top:-4px;
+	right:50px;
+}
+.b_txt{
+	color:#00AACF;
+}
+.or_txt{
+	color:#FF7200;
+}
+.camp_box{
+	display:inline-block;
+	width:47%;
+}
+.isp_img{
+	display:inline;
+}

@@ -18,9 +18,8 @@
     
     </td></tr></table>
     <br/>
-    <p> Hello MxM Rockers!!! This is CritSend Snippets Bot!! 
-    <br> Don't forget to send me your weekly snippet to snippets@critsendsnippets.appspotmail.com by Monday afternoon!
-    <br> I'm a very gossip girl and want to know everything you did this week!</p>
+    <p> You have reached CritSend Snippets Tool!
+    <br> Don't forget to send your weekly snippet to snippets@critsendsnippets.appspotmail.com by Monday afternoon!
 
     <br/><br/>        
     <table cellspacing=20>
@@ -30,9 +29,9 @@
 			    {% for user in all_users %}
 			      <a href="/user/{{ user.0.email }}">{{ user.0.pretty_name }}</a>
 			      {% if user.1 %}
-			        ✓ <a class="light" href="/unfollow?user={{ user.0.email }}&continue=/">unfollow</a>
+			        ✓ <a class="light" href="/unfollow?user={{ user.0.email }}&continue=/">Unfollow</a>
 			      {% else %}
-			        <a class="light" href="/follow?user={{ user.0.email }}&continue=/">follow</a>
+			        <a class="light" href="/follow?user={{ user.0.email }}&continue=/">Follow</a>
 			      {% endif %}      
 			      <br/>
 			    {% endfor %}
@@ -42,9 +41,9 @@
 	 		     {% for tag in all_tags %}
 			       <a href="/tag/{{ tag.0 }}">{{ tag.0 }}</a>
 			       {% if tag.1 %}
-			         ✓ <a class="light" href="/unfollow?tag={{ tag.0 }}&continue=/">unfollow</a>
+			         ✓ <a class="light" href="/unfollow?tag={{ tag.0 }}&continue=/">Unfollow</a>
 			       {% else %}
-			         <a class="light" href="/follow?tag={{ tag.0 }}&continue=/">follow</a>
+			         <a class="light" href="/follow?tag={{ tag.0 }}&continue=/">Follow</a>
 		        {% endif %}
 		        <br/>
 		      {% endfor %}      
